@@ -54,6 +54,8 @@ int main(int argc, char** argv)
    // resize
    Image resize = image.resize(200,300);
    resize.save("earth-200-300.png");
+   //cout << "loaded earth: " << image.width() << " " << image.height() << endl;
+
 
    // grayscale
    Image grayscale = image.grayscale(); 

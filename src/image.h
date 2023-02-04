@@ -44,6 +44,10 @@ class Image {
    * @param filename The file to load, relative to the running directory
    * @param flip Whether the file should flipped vertally before being saved
    */
+    
+
+    //unsigned char *data = stbi_load(filename, &width, &height, &r, &g, &b 0);
+
   bool save(const std::string& filename, bool flip = true) const;
 
   /** @brief Return the image width in pixels
@@ -190,6 +194,10 @@ class Image {
 
  private:
    // todo
+   Pixel *myData = NULL;
+   int myWidth = 0;
+   int myHeight = 0;
+   int numChannels = 3;
 };
 }  // namespace agl
 #endif  // AGL_IMAGE_H_
