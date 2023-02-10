@@ -70,7 +70,6 @@ Gamma = 2.2
 
 
 
-
 6. Blend and Replace
 <img width="421" alt="Screenshot 2023-02-03 at 8 37 44 PM" src="https://user-images.githubusercontent.com/102636198/216749255-2a90b16e-19a6-4cd1-9fae-611e6c0a7f75.png">
 
@@ -79,4 +78,7 @@ Gamma = 2.2
 ## Results
 
 TODO: Show artworks using your class
+
+* flip Vertical
+![earth-vert-flip](https://user-images.githubusercontent.com/102636198/218182727-3aebd4be-1879-4112-bd23-17dcdef6baef.png)
 
