@@ -285,7 +285,7 @@ Image Image::multiply(const Image& other) const {
 
 
 Image Image::difference(const Image& other) const {
-   Image result(0, 0);
+   Image result(0a, 0);
   
    return result;
 }
