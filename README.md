@@ -9,11 +9,18 @@ TODO: Add a representative image for your project here
 ![hands](https://user-images.githubusercontent.com/102636198/218189598-d1a44cdc-d27d-4a7f-aeab-4dcade69947c.png)
 
 *Inverted Image
+
 ![hands-inver-flip](https://user-images.githubusercontent.com/102636198/218189645-f3a558b0-0d8b-44c8-aaab-547b82d9196a.png)
 
 
 
+*Normal Image 
 
+![images](https://user-images.githubusercontent.com/102636198/218190303-ef179c3f-6664-4fcb-a6be-f8a85d895451.png)
+
+*Swirled Image
+
+![colors-swirl-flip](https://user-images.githubusercontent.com/102636198/218190353-a79d8fee-68e4-4681-88c7-df63cfef3149.png)
 
 ## How to build
 
