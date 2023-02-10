@@ -30,6 +30,8 @@ class Image {
 
   virtual ~Image();
 
+  void cleanUp();
+
   /** 
    * @brief Load the given filename 
    * @param filename The file to load, relative to the running directory
@@ -108,6 +110,7 @@ class Image {
  * Pixel colors are unsigned char, e.g. in range 0 to 255
  */
   void set(int i, const Pixel& c);
+
 
 
   // resize the image
@@ -192,12 +195,16 @@ class Image {
   // Fill this image with a color
   void fill(const Pixel& c);
 
+  //extract one channel (red, green, or blue)
+  Image extract() const;
+
  private:
    // todo
    Pixel *myData = NULL;
    int myWidth = 0;
    int myHeight = 0;
    int numChannels = 3;
+   bool isloaded = false;
 };
 }  // namespace agl
 #endif  // AGL_IMAGE_H_

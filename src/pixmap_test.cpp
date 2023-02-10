@@ -12,7 +12,7 @@ int main(int argc, char** argv)
       std::cout << "ERROR: Cannot load image! Exiting...\n";
       exit(0);
    }
-
+   
    for (int i = 0; i < image.height(); i++) {
       for (int j = 0; j < image.width(); j++) {
          Pixel c = image.get(i, j);
@@ -50,22 +50,49 @@ int main(int argc, char** argv)
 
    // should print 400 400
    cout << "loaded earth: " << image.width() << " " << image.height() << endl;
-
-   // resize
+   
+    //resize
    Image resize = image.resize(200,300);
    resize.save("earth-200-300.png");
-   //cout << "loaded earth: " << image.width() << " " << image.height() << endl;
+   cout << "loaded earth: " << image.width() << " " << image.height() << endl;
+   //return 0;
 
 
    // grayscale
    Image grayscale = image.grayscale(); 
    grayscale.save("earth-grayscale.png");
+   
 
    // flip horizontal
    Image flip = image.flipHorizontal(); 
    flip.save("earth-flip.png"); 
 
+   Image vertflip = image.flipVertical(); 
+   vertflip.save("earth-vert-flip.png"); 
+
+   Image inver = image.invert(); 
+   inver.save("earth-inver-flip.png"); 
+
+   Image jitter = image.colorJitter(75); 
+   jitter.save("earth-jitter-flip.png"); 
+
+   Image rotate = image.rotate90();
+   rotate.save("earth-rotate.png");
+
+   Image swirl = image.swirl();
+   swirl.save("earth-swirl.png");
+
+   Image lighestt = image.lightest(grayscale);
+   lighestt.save("earth-lighest.png");
+
+   Image darkestImg = image.darkest(grayscale);
+   darkestImg.save("earth-darkest.png");
+
+
+   Image extracted = image.extract();
+   extracted.save("earth-extracted.png");
    // sub image
+
    Image sub = image.subimage(200, 200, 100, 100); 
    sub.save("earth-subimage.png"); 
 
@@ -87,5 +114,15 @@ int main(int argc, char** argv)
    Image blend = background.alphaBlend(soup, 0.5f);
    image.replace(blend, x, y);
    image.save("earth-blend-0.5.png");
+
+   
+   Pixel pink;
+   pink.r = 255;
+   pink.g = 192;
+   pink.b = 203;
+   image.fill(pink);
+   image.save("earth-fill.png");
+   
+
 }
 
