@@ -19,14 +19,12 @@
  * eplacing a block of pixels in a image
  * 
  * @author: Jenifer Fabian Dubon
- * @version: Feb 3, 2023
+ * @version: Feb 10, 2023
  * 
 **/
 
 
 namespace agl {
-
-
 
 Image::Image() {
    myHeight =0;
@@ -41,7 +39,7 @@ Image::Image(int width, int height)  {
    numChannels = 3;
    myData = new  Pixel[width * height];
    isloaded = false;
-   //myData = NULL;
+   myData = NULL;
 }
 
 Image::Image(const Image& orig) {
