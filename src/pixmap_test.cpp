@@ -73,7 +73,7 @@ int main(int argc, char** argv)
    Image inver = image.invert(); 
    inver.save("earth-inver-flip.png"); 
 
-   Image jitter = image.colorJitter(75); 
+   Image jitter = image.colorJitter(50); 
    jitter.save("earth-jitter-flip.png"); 
 
    Image rotate = image.rotate90();
@@ -82,12 +82,8 @@ int main(int argc, char** argv)
    Image swirl = image.swirl();
    swirl.save("earth-swirl.png");
 
-   Image lighestt = image.lightest(grayscale);
+   Image lighestt = image.lightest(jitter);
    lighestt.save("earth-lighest.png");
-
-   Image darkestImg = image.darkest(grayscale);
-   darkestImg.save("earth-darkest.png");
-
 
    Image extracted = image.extract();
    extracted.save("earth-extracted.png");
@@ -102,6 +98,9 @@ int main(int argc, char** argv)
 
    gamma = image.gammaCorrect(2.2f);
    gamma.save("earth-gamma-2.2.png"); 
+
+   Image darkestImg = image.darkest(inver);
+   darkestImg.save("earth-darkest.png");
 
    // alpha blend
    Image soup;
@@ -122,7 +121,7 @@ int main(int argc, char** argv)
    pink.b = 203;
    image.fill(pink);
    image.save("earth-fill.png");
-   
+
 
 }
 

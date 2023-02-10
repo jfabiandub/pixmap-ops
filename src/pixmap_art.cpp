@@ -52,12 +52,29 @@ int main(int argc, char** argv)
    // should print 400 400
    cout << "loaded earth: " << image.width() << " " << image.height() << endl;
    
-   Image grayscale = image.grayscale(); 
-   grayscale.save("earth-grayscale.png");
+   if (!image.load("../images/images.png")) {
+      std::cout << "ERROR: Cannot load image! Exiting...\n";
+      exit(0);
+   }
    
-   Image darkestImg = image.darkest(grayscale);
-   darkestImg.save("earth-darkest.png");
+   Image grayPic = image.swirl(); 
+   grayPic.save("colors-swirl-flip.png");
 
-   return 0;
+   if (!image.load("../images/hands.png")) {
+      std::cout << "ERROR: Cannot load image! Exiting...\n";
+      exit(0);
+   }
+
+   Image invertPic2 = image.invert(); 
+   invertPic2.save("hands-inver-flip.png");
+
+   if (!image.load("../images/lights.png")) {
+      std::cout << "ERROR: Cannot load image! Exiting...\n";
+      exit(0);
+   }
+
+   Image invertPic3 = image.grayscale(); 
+   invertPic3.save("lights-grayscale-flip.png");
+
 }
 

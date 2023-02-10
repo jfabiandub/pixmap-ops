@@ -39,7 +39,7 @@ Image::Image(int width, int height)  {
    numChannels = 3;
    myData = new  Pixel[width * height];
    isloaded = false;
-   myData = NULL;
+  // myData = NULL;
 }
 
 Image::Image(const Image& orig) {
