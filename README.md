@@ -68,6 +68,9 @@ Gamma = 2.2
 5. Subimage
 <img width="134" alt="Screenshot 2023-02-03 at 8 37 02 PM" src="https://user-images.githubusercontent.com/102636198/216749245-00c64851-3875-41aa-beb7-b248eb18bba0.png">
 
+
+
+
 6. Blend and Replace
 <img width="421" alt="Screenshot 2023-02-03 at 8 37 44 PM" src="https://user-images.githubusercontent.com/102636198/216749255-2a90b16e-19a6-4cd1-9fae-611e6c0a7f75.png">
 
