@@ -1,0 +1,4 @@
+/Users/jenifer_dubon/pixmap-ops/build/CMakeFiles/pixmap_test.dir
+/Users/jenifer_dubon/pixmap-ops/build/CMakeFiles/pixmap_art.dir
+/Users/jenifer_dubon/pixmap-ops/build/CMakeFiles/edit_cache.dir
+/Users/jenifer_dubon/pixmap-ops/build/CMakeFiles/rebuild_cache.dir
