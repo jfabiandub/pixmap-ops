@@ -57,8 +57,8 @@ int main(int argc, char** argv)
       exit(0);
    }
    
-   Image grayPic = image.swirl(); 
-   grayPic.save("colors-swirl-flip.png");
+   Image Pic1 = image.swirl(); 
+   Pic1.save("colors-swirl-flip.png");
 
    if (!image.load("../images/hands.png")) {
       std::cout << "ERROR: Cannot load image! Exiting...\n";
@@ -73,8 +73,8 @@ int main(int argc, char** argv)
       exit(0);
    }
 
-   Image invertPic3 = image.grayscale(); 
-   invertPic3.save("lights-grayscale-flip.png");
+   Image Pic3 = image.grayscale(); 
+   Pic3.save("lights-grayscale-flip.png");
 
 }
 
