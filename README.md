@@ -2,7 +2,6 @@
 
 Image manipulation demos based on the PPM image format.
 
-TODO: Add a representative image for your project here 
 
 *Normal Image
 
@@ -63,7 +62,6 @@ pixmap-ops/build $ ../bin/pixmap_art
 
 ## Image operators
 
-TODO: Document the features of your PPM image class here. Include example images.
 
 1.Resize 
 <img width="229" alt="Screenshot 2023-02-03 at 8 34 53 PM" src="https://user-images.githubusercontent.com/102636198/216749124-c531356d-868e-4f30-bc3b-405abb20e860.png">
@@ -94,8 +92,6 @@ Gamma = 2.2
 
 
 ## Results
-
-TODO: Show artworks using your class
 
 * Flip Vertical
 
